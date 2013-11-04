@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2013 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="infinity" unicode="&#xe802;" d="m796 570q84 0 144-53t60-167q0-112-60-166t-144-54q-78 0-157 40t-139 106q-58-66-137-106t-157-40q-86 0-146 54t-60 166q0 114 60 167t146 53q78 0 157-39t137-105q58 66 138 105t158 39z m-590-352q60 0 127 37t113 95q-46 58-112 95t-128 37q-114 0-114-132t114-132z m590 0q114 0 114 132t-114 132q-62 0-129-37t-111-95q44-58 111-95t129-37z" horiz-adv-x="1000" />
+<glyph glyph-name="chart-area" unicode="&#xe800;" d="m964 732q16 22 16-4l0-768l-964 0q-12 0-15 7t5 17l230 288q20 22 40 2l74-66q10-8 21-7t17 11l158 238q16 26 38 4l112-104q20-20 38 4z" horiz-adv-x="980" />
+<glyph glyph-name="flow-tree" unicode="&#xe801;" d="m868 112q72-34 72-112q0-50-35-85t-85-35t-85 35t-35 85q0 78 72 112l0 114q0 78-76 78l-100 0q-44 0-78 12l0-204q72-34 72-112q0-50-35-85t-85-35t-85 35t-35 85q0 78 72 112l0 204q-30-12-76-12l-100 0q-34 0-53-19t-22-33t-3-26l0-114q72-34 72-112q0-50-35-85t-85-35t-85 35t-35 85q0 78 72 112l0 114q0 64 43 118t131 54l100 0q76 0 76 52l0 140q-72 34-72 110q0 50 35 85t85 35t85-35t35-85q0-76-72-110l0-140q0-52 78-52l100 0q86 0 129-54t43-118l0-114z m-678-112q0 30-21 50t-49 20t-48-20t-20-50q0-28 20-48t48-20t49 20t21 48z m212 700q0-28 20-48t48-20t49 20t21 48q0 30-21 50t-49 20t-48-20t-20-50z m138-700q0 30-21 50t-49 20t-48-20t-20-50q0-28 20-48t48-20t49 20t21 48z m280-68q28 0 49 20t21 48q0 30-21 50t-49 20t-48-20t-20-50q0-28 20-48t48-20z" horiz-adv-x="940" />
+</font>
+</defs>
+</svg>

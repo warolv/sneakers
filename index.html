@@ -1,0 +1,190 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>web</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/059fb921.main.css">
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="container">
+            <div class="hero">
+              <img src="images/08a02b01.sneakers.png">
+              <h1>Sneakers</h1>
+              <h2>
+                Performance background processing for Ruby
+              </h2>
+              <br>
+
+              <a class="slimlink black" href="http://github.com/jondot/sneakers">Fork on Github &rarr;</a>
+            </div>
+
+            <div class="row features">
+              <div class="col-lg-12">
+
+                <div class="feature">
+                  <div class="feature-icon">
+                    <i class="icon-chart-area"></i>
+                  </div>
+                  <div class="feature-desc">
+                    <h1>Performance Happy</h1>
+                    <p>
+                      Hybrid multi-process and multi-threaded processing model max
+                      out all your cores.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature">
+                  <div class="feature-icon">
+                    <i class="icon-flow-tree"></i>
+                  </div>
+                  <div class="feature-desc">
+                    <h1>Worker Management</h1>
+                    <p>
+                      If you liked how Unicorn works, we used a similar model to support 
+                      rolling upgrades and reloads.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature">
+                  <div class="feature-icon">
+                    <i class="icon-infinity" style="line-height:110px"></i>
+                  </div>
+                  <div class="feature-desc">
+                    <h1>Scalable Queue Broker</h1>
+                    <p>
+                      We built on <a href="http://rabbitmq.com">RabbitMQ</a> a robust, performant and stable queue broker that
+                      everyone loves.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row quickstart">
+              <div class="col-lg-8 walkthrough">
+                <h1>Quick Start</h1>
+
+                <p>Install the gem:</p>
+                <pre><code class="language-ruby">$ gem install 'sneakers'</code></pre>
+
+                <p>Maker a worker or two:</p>
+                <pre><code class="language-ruby">require 'sneakers'
+require 'open-uri'
+require 'nokogiri'
+
+class TitleScraper
+  include Sneakers::Worker
+  from_queue 'downloads'
+
+  def work(msg)
+    doc = Nokogiri::HTML(open(msg))
+    worker_trace doc.css('title').text
+    ack!
+  end
+end</code></pre>
+                <p>Include our rake tasks:</p>
+                <pre><code class="language-ruby">require 'sneakers/tasks'</code></pre>
+                <p>And run:</p>
+                <pre><code class="language-ruby">$ export WORKERS=TitleScraper
+$ rake sneakers:run</code></pre>
+            </div>
+
+
+
+            <div class="col-lg-4 learn-more">
+              <div class="learn-bit">
+                <a href="http://github.com/jondot/sneakers/wiki/Performance">
+                  <h2>
+                    Show me the numbers!
+                  </h2>
+                  <p>Take a look at how Sneakers smokes Sidekiq</p>
+                </a>
+              </div>
+              
+              <div class="learn-bit">
+                <a href="http://github.com/jondot/sneakers/wiki/Auto-scaling">
+                  <h2>
+                    What if I got a ton of I/O?
+                  </h2>
+                  <p>That's why Sneakers lets you use a ton of threads (configurable, too!)</p>
+                </a>
+              </div>
+
+              <div class="learn-bit">
+                <a href="http://github.com/jondot/sneakers/wiki/Configuration">
+                  <h2>
+                    Configuration
+                  </h2>
+                  <p>Sneakers uses layers of default configurations so you can step in and tweak almost everything</p>
+                </a>
+              </div>
+
+              <div class="learn-bit">
+                <a href="http://github.com/jondot/sneakers/wiki/Running-With-Sneakers">
+                  <h2>
+                    Many ways to run
+                  </h2>
+                  <p>You can run Sneakers via Rake, CLI or programmatically</p>
+                </a>
+              </div>
+              
+              <div class="learn-bit">
+                <a href="http://github.com/jondot/sneakers/wiki/Failures">
+                  <h2>
+                    Failures
+                  </h2>
+                  <p>We treat failures seriously, which is why we use the same concepts from RabbitMQ</p>
+                </a>
+              </div>
+
+              <div class="learn-bit">
+                <a href="http://github.com/jondot/sneakers/wiki/Creating-a-Worker">
+                  <h2>
+                    Using the Worker DSL
+                  </h2>
+                  <p>See what kind of things are provided to you for free for your worker code</p>
+                </a>
+              </div>
+
+
+              <div class="learn-bit-more">
+                <a class="slimlink" href="http://github.com/jondot/sneakers/wiki">Continue to Wiki &rarr;</a>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+
+        <script src="scripts/0542938e.vendor.js"></script>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-7131053-14');ga('send','pageview');
+        </script>
+
+        <script src="scripts/089d4d4c.main.js"></script>
+</body>
+</html>
